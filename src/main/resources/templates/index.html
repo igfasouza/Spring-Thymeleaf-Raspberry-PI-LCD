@@ -1,0 +1,40 @@
+<html lang="en">  
+<head>  
+	<title>Index Page</title>
+	<link th:href="@{/css/style.css}" rel="stylesheet"></link>
+	<script th:src="@{/js/scripts.js}" type="text/javascript"></script>   
+</head>  
+<body>  
+	<form action="save" method="post">  
+
+		<div class="wrapper">
+            <div class="middle">
+                <div class="container">
+                    <div id="intro" class="introclass">
+                    <input type="button" id="zatwierdz" value="Create" onclick="createtable()" class="btn">
+                </div> 
+
+                <div id="tabelka" class="glownatabela">
+                <input type="submit" value="Submit" class="btn" >
+                	<table id="divki" class="noIbar">
+                	</table>
+                </div>
+
+                <section class="opis">
+                    <div id="mono1bit">
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <div id="allblac" class="allblack" onClick="hide('allblac')">
+            <div id="popDiv" class="ontop" >
+                <canvas width="700" height="700" id="can">
+                </canvas>
+            </div>
+        </div> 
+
+	</form>  
+</body>  
+</html>  
